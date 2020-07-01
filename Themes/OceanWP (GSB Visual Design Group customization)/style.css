@@ -223,7 +223,10 @@ div.elementor-widget-divider .elementor-divider-separator{
 div.elementor-widget-sidebar.is_stuck{z-index:100;}
 
 /*Footer SVG Logo*/
-footer#footer img.gsb-logo{
+footer#footer img.gsb-logo,
+.elementor-widget-image.gsb-logo  .elementor-image>a img[src$=".svg"], 
+.elementor-widget-image.gsb-logo  .elementor-image figure>a img[src$=".svg"]{
+	width:100%;
 	max-width:180px !important;
 }
 
