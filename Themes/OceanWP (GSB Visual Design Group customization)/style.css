@@ -5,7 +5,7 @@ Description: A customized Wordpress child theme based on OceanWP.
 Author: Cristina Strombotne
 Author URI: https://www.linkedin.com/in/cstrombotne/
 Template: oceanwp
-Version: 2020.07.17
+Version: 2020.08.19
 */
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
@@ -240,6 +240,11 @@ footer#footer img.gsb-logo,
 	max-width:180px !important;
 }
 
+/*Footer Login*/
+.elementor-widget-login.dark a{
+	color:#fff !important;
+}
+
 /*==================================================
 ====================================================
 
@@ -251,14 +256,17 @@ footer#footer img.gsb-logo,
 /*Elementor Padded Section*/
 @media all and (min-width:0px){
 	section.padded,
+	footer.padded,
 	.elementor-column.padded .elementor-column-wrap{padding:1em;}
 }
 @media all and (min-width:768px) and (max-width:960px){
 	section.padded,
+	footer.padded,
 	.elementor-column.padded .elementor-column-wrap{padding:2em;}
 }
 @media all and (min-width:961px){
 	section.padded,
+	footer.padded,
 	.elementor-column.padded .elementor-column-wrap{padding:3em;}
 }
 
@@ -376,7 +384,7 @@ span.elementor-icon:hover{ color: #42423E; }
 span.elementor-share-btn__title{font-weight:600; letter-spacing: 0.5px;}
 
 /*Login Form*/
-.elementor-widget-login{background:#f4f4f3;padding: 1em;}
+/*.elementor-widget-login{background:#f4f4f3;padding: 1em;}*/
 
 /*Elementor Price Table Widget*/
 .elementor-widget-price-table div.elementor-widget-container{background:#f4f4f3;}
