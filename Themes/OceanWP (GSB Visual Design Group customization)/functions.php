@@ -58,3 +58,14 @@ function cc_hide_admin_bar() {
 	}
 }
 add_action('after_setup_theme', 'cc_hide_admin_bar');
+
+
+/*Turn off Media Comments*/
+function filter_media_comment_status( $open, $post_id ) {
+    $post = get_post( $post_id );
+    if( $post->post_type == 'attachment' ) {
+        return false;
+    }
+    return $open;
+}
+add_filter( 'comments_open', 'filter_media_comment_status', 10 , 2 );
