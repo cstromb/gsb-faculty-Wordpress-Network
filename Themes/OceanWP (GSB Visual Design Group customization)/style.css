@@ -5,7 +5,7 @@ Description: A customized Wordpress child theme based on OceanWP.
 Author: Cristina Strombotne
 Author URI: https://www.linkedin.com/in/cstrombotne/
 Template: oceanwp
-Version: 2020.08.19
+Version: 2020.09.02
 */
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
@@ -668,6 +668,10 @@ div.oew-switch-container .oew-switch-wrap.oew-switch-on span:before {
 .elementor-tab-content :last-child{
 	margin-bottom:0;
 }
+.elementor-tab-content li a,
+.elementor-tab-content p a{
+	text-decoration:underline;
+} 
 
 /*Login Form*/
 div.elementor-widget-oew-login,
