@@ -5,7 +5,7 @@ Description: A customized Wordpress child theme based on OceanWP.
 Author: Cristina Strombotne
 Author URI: https://www.linkedin.com/in/cstrombotne/
 Template: oceanwp
-Version: 2020.10.08
+Version: 2020.10.21
 */
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
@@ -276,7 +276,7 @@ footer#footer img.gsb-logo,
 
 
 /*Add underline to basic text editor links*/
-div.elementor div.elementor-widget-text-editor a,
+div.elementor div.elementor-widget-text-editor p a,
 div.elementor-widget-heading p a,
 div.elementor-widget-heading span a{
 	text-decoration: underline;
@@ -1258,18 +1258,19 @@ body.single .mec-wrap{padding-bottom:2rem;}
 	letter-spacing: 0.6px;
 	color:#6C6C69;
 }
-
+div.research-listing,
 article.research-listing{
 	font-size:0.75em;
 	line-height:1.5em;
 	margin-bottom:1rem;
 }
-
+div.course-listing,
 article.course-listing{
 	font-size:0.75em;
 	line-height:1.5em;
 	margin-bottom:1rem;
 }
+div.press-listing,
 article.press-listing{
 	font-size:0.75em;
 	line-height:1.5em;
